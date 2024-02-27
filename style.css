@@ -1,0 +1,282 @@
+/* Vinishireis-sass (https://github.com/Vinishireis) */
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  transition: 0.2s ease all;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", "sans-serif";
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+/* Vinishireis-sass (https://github.com/Vinishireis) */
+.Vinishireis-app__profile {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.Vinishireis-app {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.Vinishireis-app__ctrl, .Vinishireis-app__themes {
+  position: fixed;
+  top: 18px;
+  left: 18px;
+}
+.Vinishireis-app__ctrl {
+  display: none;
+}
+.Vinishireis-app__toggle {
+  border: 0;
+  outline: 0;
+  stroke: 0;
+  box-shadow: 0;
+  padding: 9px;
+  border-radius: 9px;
+  background: #333;
+  color: #cfcfcf;
+  cursor: pointer;
+}
+.Vinishireis-app__toggle span {
+  margin-left: 4px;
+}
+.Vinishireis-app__toggle:hover {
+  box-shadow: 0 0 0 9px #ccc;
+}
+.Vinishireis-app__toggle:active {
+  transform: scale(0.9);
+  box-shadow: none;
+}
+.Vinishireis-app__themes {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: space-around;
+  justify-content: space-around;
+  align-content: space-around;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  padding: 6px;
+  border-radius: 9px;
+  text-align: center;
+  background: #222;
+  color: #fff;
+}
+.Vinishireis-app__themes label {
+  margin: 21px 8px;
+  font-size: 1rem;
+}
+.Vinishireis-app__themes label span {
+  padding: 9px;
+  border-radius: 9px;
+  cursor: pointer;
+}
+.Vinishireis-app__themes input {
+  display: none;
+}
+.Vinishireis-app__themes input:checked ~ span {
+  box-shadow: 0 0 0 2px #c63;
+}
+.Vinishireis-app__themes span:hover {
+  box-shadow: 0 0 0 1px #fff;
+}
+.Vinishireis-app__themes span:active {
+  box-shadow: 0 0 0 6px #d96;
+}
+
+/* default */
+.Vinishireis-profile {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+.Vinishireis-profile__name {
+  margin: 10px 0;
+}
+.Vinishireis-profile__city {
+  text-transform: uppercase;
+  margin: 5px 0;
+}
+.Vinishireis-profile__description {
+  font-size: 14px;
+  line-height: 21px;
+}
+.Vinishireis-profile__card {
+  width: 350px;
+  max-width: 100%;
+  position: relative;
+  padding-top: 30px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0px 10px 20px -10px rgba(0, 0, 0, 0.75);
+}
+.Vinishireis-profile__pro {
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 3px 7px;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+.Vinishireis-profile__pic {
+  border: 1px solid #000;
+  border-radius: 50%;
+  padding: 7px;
+}
+.Vinishireis-profile__button {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px 25px;
+  border: 1px solid #000;
+  border-radius: 3px;
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+}
+.Vinishireis-profile__button:hover {
+  opacity: 0.5;
+}
+.Vinishireis-profile__button:not(.Vinishireis-profile__button--primary) {
+  background-color: transparent !important;
+}
+.Vinishireis-profile__skills {
+  padding: 12px 6px;
+  margin-top: 30px;
+  text-align: left;
+}
+.Vinishireis-profile__skills_title {
+  text-transform: uppercase;
+  padding: 0 7px;
+  margin: 18px 0;
+}
+.Vinishireis-profile__skills_items {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.Vinishireis-profile__skills_item {
+  display: inline-block;
+  border: 1px solid #000;
+  border-radius: 3px;
+  margin: 0 5px 5px;
+  padding: 7px;
+  font-size: 12px;
+}
+
+/* violet */
+.Vinishireis-profile--theme_violet {
+  background-color: #28223f;
+}
+.Vinishireis-profile--theme_violet .Vinishireis-profile__card {
+  background-color: #231e39;
+  color: #b3b8cd;
+}
+.Vinishireis-profile--theme_violet .Vinishireis-profile__pic {
+  border-color: #03bfcb;
+}
+.Vinishireis-profile--theme_violet .Vinishireis-profile__pro {
+  color: #231e39;
+  background-color: #febb0b;
+}
+.Vinishireis-profile--theme_violet .Vinishireis-profile__button {
+  border-color: #03bfcb;
+  color: #02899c;
+}
+.Vinishireis-profile--theme_violet .Vinishireis-profile__button--primary {
+  background-color: #03bfcb;
+  color: #231e39;
+}
+.Vinishireis-profile--theme_violet .Vinishireis-profile__skills {
+  background: #1f1a36;
+}
+.Vinishireis-profile--theme_violet .Vinishireis-profile__skills_item {
+  border-color: #2d2747;
+}
+
+/* dark */
+.Vinishireis-profile--theme_dark {
+  background-color: #1c1c1c;
+}
+.Vinishireis-profile--theme_dark .Vinishireis-profile__card {
+  background-color: #313131;
+  color: #d3d3d3;
+}
+.Vinishireis-profile--theme_dark .Vinishireis-profile__pic {
+  border-color: #d3d3d3;
+}
+.Vinishireis-profile--theme_dark .Vinishireis-profile__pro {
+  color: #1c1c1c;
+  background: #fff;
+}
+.Vinishireis-profile--theme_dark .Vinishireis-profile__button {
+  border-color: #febb0b;
+  color: #febb0b;
+}
+.Vinishireis-profile--theme_dark .Vinishireis-profile__button--primary {
+  background-color: #febb0b;
+  color: #1c1c1c;
+}
+.Vinishireis-profile--theme_dark .Vinishireis-profile__skills {
+  background: #1c1c1c;
+}
+.Vinishireis-profile--theme_dark .Vinishireis-profile__skills_item {
+  border-color: #343434;
+}
+
+/* light */
+.Vinishireis-profile--theme_light {
+  background-color: #cecece;
+}
+.Vinishireis-profile--theme_light .Vinishireis-profile__card {
+  background-color: #fff;
+  color: #313131;
+}
+.Vinishireis-profile--theme_light .Vinishireis-profile__pic {
+  border-color: #d3d3d3;
+}
+.Vinishireis-profile--theme_light .Vinishireis-profile__pro {
+  color: #fff;
+  background: #1c1c1c;
+}
+.Vinishireis-profile--theme_light .Vinishireis-profile__button {
+  border-color: #d3d3d3;
+  color: #313131;
+}
+.Vinishireis-profile--theme_light .Vinishireis-profile__button--primary {
+  background-color: #febb0b;
+  border-color: #febb0b;
+  color: #1c1c1c;
+}
+.Vinishireis-profile--theme_light .Vinishireis-profile__skills {
+  background: #1c1c1c;
+  color: #a0a0a0;
+}
+.Vinishireis-profile--theme_light .Vinishireis-profile__skills_item {
+  border-color: #343434;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Profile | Vinishireis</title>
+  <meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css'>
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="Vinishireis-app">
+  <div class="Vinishireis-app__ctrl">
+    <button type="button" class="Vinishireis-app__toggle Vinishireis-app__toggle--preview">
+      <i class="fa fa-eye"></i> <!-- fa-edit -->
+      <span>Preview</span> <!-- Edit -->
+    </button>
+  </div>
+  <div id="app-themes" class="Vinishireis-app__themes">
+    <label><input type="radio" class="Vinishireis-app__theme" name="app-themes" value="" /><span> Default </span></label>
+    <label><input type="radio" class="Vinishireis-app__theme" name="app-themes" value="light" checked="checked" /><span> Light </span></label>
+    <label><input type="radio" class="Vinishireis-app__theme" name="app-themes" value="dark" /><span> Dark </span></label>
+    <label><input type="radio" class="Vinishireis-app__theme" name="app-themes" value="violet" /><span> Violet </span></label>
+  </div>
+  <div class="Vinishireis-app__preview">
+    <div id="profile-container" class="Vinishireis-app__profile">
+      <div id="profile" class="Vinishireis-profile Vinishireis-profile--theme_">
+
+        <div class="Vinishireis-profile__card">
+
+          <span id="profile-pro" class="Vinishireis-profile__pro"></span>
+
+          <img id="profile-pic" class="Vinishireis-profile__pic" width="128" height="128" />
+
+          <h3 id="profile-name" class="Vinishireis-profile__name"></h3>
+          <h6 id="profile-city" class="Vinishireis-profile__city"></h6>
+          <p id="profile-desc" class="Vinishireis-profile__description"></p>
+
+          <div id="profile-buttons" class="Vinishireis-profile__buttons"></div>
+
+          <div class="Vinishireis-profile__skills">
+            <h6 class="Vinishireis-profile__skills_title">Skills</h6>
+            <ul id="profile-skills" class="Vinishireis-profile__skills_items"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  (function() {
+    var links = document.querySelectorAll('a[href]');
+    links.forEach(function(link) {
+      var href = link.getAttribute('href');
+      if (href.indexOf('#') !== 0) {
+        link.addEventListener('click', function(event) {
+          event.preventDefault();
+        });
+      }
+    });
+  }());
+</script>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js'></script>
+<script src='https://cdn.jsdelivr.net/gh/miko-github/miko-github@v0.0.1/codepen.js'></script>
+<script  src="./script.js"></script>
+
+</body>
+</html>
