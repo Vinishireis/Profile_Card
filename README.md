@@ -2,8 +2,6 @@
 
 A pen Created on Vinishireis
 
-Sure, here's a description of a User Card created using HTML, CSS, and JS:
-
 ---
 
 The User Card is a versatile and interactive component designed using HTML, CSS, and JavaScript. It showcases the user's skills and adapts seamlessly to various screen sizes, ensuring a responsive user experience. With its customizable color schemes, it allows users to personalize their profiles according to their preferences.
